@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="U2_A_a13josecc"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptTexto"
+            android:background="@color/verde"
+            android:inputType="textCapWords"
+            android:hint="@string/tfTexto" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cbLimpar"
+            android:id="@+id/cvClear"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btAñadirLimpar"
+            android:id="@+id/btAddClear"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ptEsctrito"
+            android:textSize="@dimen/text1Size"
+            android:id="@+id/ptEscrito"
+            android:textColor="@color/rojo" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="@dimen/radioButton_width"
+                android:layout_height="wrap_content"
+                android:text="@string/rbRojo"
+                android:id="@+id/rbRojo"
+                android:onClick="controlarCheck"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rbAzul"
+                android:layout_weight="1"
+                android:onClick="controlarCheck"
+                android:id="@+id/rbAzul" />
+           </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_height"
+            android:background="@color/negro" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerProvincias"
+            android:entries="@array/arrayProvincias" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_height"
+            android:background="@color/negro"/>
+
+        <ImageView
+            android:id="@+id/faro"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/imaxe_tam"
+            android:layout_width="@dimen/imaxe_tam"
+            android:src="@mipmap/faro"
+            android:onClick="clickFoto"
+            android:tag="@string/toast4"
+            android:scaleType="center"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_height"
+            android:background="@color/negro"
+            android:layout_gravity="bottom|top" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+
+
+        <Chronometer
+            android:id="@+id/cronometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:onClick="onStartClick"/>
+        <Switch
+            android:id="@+id/idSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:textOn="Start"
+            android:textOff="Stop"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

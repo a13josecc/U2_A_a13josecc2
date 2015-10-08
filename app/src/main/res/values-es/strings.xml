@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">U2_A_a13josecc</string>
+    <string name="action_settings">Configuraci&#243;n</string>
+
+    <string name="tfTexto">Escribe un texto y pulsa el bot&#243;n</string>
+    <string name="textoFijo">Limpiar</string>
+    <string name="ptEsctrito">Aqu&#237; ver&#225;s el texto que has escrito</string>
+
+
+
+    <string name="cbLimpar">Limpiar</string>
+    <string name="btAñadirLimpar">A&#241;adir/Borrar</string>
+    <string name="rbRojo">Rojo</string>
+    <string name="rbAzul">Azul</string>
+
+    <string name="toast1">Fisterra</string>
+    <string name="toast2">Has seleccionado una provincia gallega</string>
+    <string name="toast3">Has seleccionado una provincia no gallega</string>
+    <string name="toast4">Faro de Finisterre</string>
+
+
+    <string name="Coruña">A Coru\u00f1a</string>
+    <string name="Lugo">Lugo</string>
+    <string name="Pontevedra">Pontevedra</string>
+    <string name="Ourense">Ourense</string>
+    <string name="Leon">Le&#243;n</string>
+
+
+    <string name="on">Iniciar</string>
+    <string name="off">Parar</string>
+</resources>
